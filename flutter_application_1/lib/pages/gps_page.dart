@@ -41,7 +41,7 @@ class _GpsPageState extends State<GpsPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('GPS / Localização'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -81,7 +81,7 @@ class _GpsPageState extends State<GpsPage> {
                         _controller.statusMessage,
                         style: TextStyle(
                           color: _controller.currentPosition != null
-                              ? Colors.green
+                              ? Colors.deepPurple
                               : Colors.orange,
                           fontWeight: FontWeight.w500,
                         ),
