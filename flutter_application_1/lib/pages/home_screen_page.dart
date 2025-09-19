@@ -4,6 +4,7 @@ import 'package:flutter_application_1/examples/simple_change_notifier_example.da
 import 'package:flutter_application_1/examples/user_controller.dart';
 import 'package:flutter_application_1/examples/value_notifier_counter_screen.dart';
 import 'package:flutter_application_1/pages/counter_screen_page.dart';
+import 'package:flutter_application_1/pages/gps_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -35,6 +36,14 @@ class HomeScreen extends StatelessWidget {
                   description: 'Perfil', 
                   icon: Icons.add_circle_outline, 
                   destination: SimpleChangeNotifierExample(),
+
+                ),
+
+                CustomCard(
+                  title: 'GPS / Localização', 
+                  description: 'Exemplo GPS', 
+                  icon: Icons.add_circle_outline, 
+                  destination: GpsPage(),
 
                 ),
               ],
